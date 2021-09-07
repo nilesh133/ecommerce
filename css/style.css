@@ -1,0 +1,489 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.overall-padding{
+    padding: 0 6%;
+}
+
+:root{
+    --col-1: #e83e8c;
+    --col-2: #111111;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+    height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px grey; 
+  }
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#name h2, h4{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+}
+#name h2{
+    font-weight: bold;
+    color: black;
+    letter-spacing: 2px;
+}
+
+#name h4{
+    font-weight: bolder;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    color: var(--col-1);
+    margin-top: -0.2rem;
+}
+
+#navbar ul{
+    margin: 0;
+}
+
+#navbar ul li{
+    display: inline-block;
+    padding-right: 4rem;
+}
+
+#navbar ul li a{
+    position: relative;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: text-decoration 1s, color 1s;
+}
+
+#navbar ul li a:after{
+    content: "";
+    position: absolute;
+    background-color: var(--col-1);
+    height: 2px;
+    width: 0;
+    bottom: -25%;
+    left: 0;
+    transition: width 0.4s;
+}
+
+#navbar ul li a:hover{
+    color: var(--col-1);
+}
+
+#navbar ul li a:hover:after{
+    width: 100%;
+}
+
+#navbar li .active{
+    color: var(--col-1);
+   
+}
+
+.menu{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+    height: 2rem;
+    width: 5rem;
+    top: 20%;
+    right: 5%;
+    background-color: black;
+    color: var(--col-1);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.1rem;
+}
+
+
+#middle-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background:rgba(0,0,0,0.1) url("../images/background.jpg");
+    background-position: center;
+    height: 45rem;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+#middle-content h1{
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+    margin: 0;
+}
+
+#middle-content span{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: black;
+    letter-spacing: 1px;
+}
+
+#middle-content p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    width: 40%;
+    margin: 0;
+}
+
+#front-page-button{
+    margin-top: 3.2rem;
+}
+
+#front-page-button a{
+    background-color: transparent;
+    border: 2px solid transparent;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    padding: 1rem 1.5rem;
+    color: white;
+    background-color: var(--col-1);
+    font-weight: bold;
+    border-radius: 2rem;
+    letter-spacing: 2px;
+    margin-right: 0.8rem;
+    margin-bottom: 1.2rem;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+#front-page-button a:hover{
+    background-color: transparent;
+    border: 2px solid var(--col-1);
+}
+
+#card-container-text h2{
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    color: var(--col-2);
+    text-align: center;
+    background-color: white;
+    padding: 2rem 3rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 30px 30px 50px;
+}
+
+.card{
+    width: 300px;
+    border: 2px solid grey;
+    margin: 50px 15px;
+    box-shadow: 3px 3px 9px white;
+}
+
+.image{
+    height: 20rem;
+}
+
+.card1{
+    background-image : url("../images/shirt.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.card2{
+    background-image : url("../images/jeans.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.card3{
+    background-image : url("../images/shoes.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.card4{
+    background-image : url("../images/watch.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.card h2{
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    color: var(--col-2);
+    letter-spacing: 1px;
+}
+
+.card p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.2rem;
+    color: var(--col-1);
+}
+
+.rating-buy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 0.5rem;
+}
+
+.rating{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.buy{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 12px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#footer{
+    background-color: var(--col-2);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 5rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 5rem;
+    text-align: center;
+    
+}
+
+#footer h3{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+}
+
+#footer-about{
+    width: 100%;
+}
+
+#footer-about p{
+    font-weight: 500;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0 2% 2% 0;
+}
+
+#footer-links ul{
+    list-style-type: none;
+    line-height: 2;
+    padding-left: 0;
+}
+
+#footer-links ul li a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+#footer-social i{
+    color: var(--col-1);
+    background-color: white;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    border-radius: 0.8rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#footer-social i:hover{
+    color: white;
+    background-color: var(--col-1);
+}
+
+.footer-content ul li a:hover{
+    color: var(--col-1);
+}
+
+#discount-popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--col-1);
+    width: 25rem;
+    max-width: 60%;
+    border-radius: 1rem;
+    padding: 3rem;
+    display: none;
+    z-index: 1;
+    animation: width 1s;
+}
+
+@keyframes width {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#discount-popup i{
+    font-size: 1.5rem;
+    padding: 0.7rem 1rem;
+    background-color: white;
+    border-radius: 60%;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+#discount-popup h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 1198px) {
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #navbar{
+        position: relative;
+    }
+
+    #navbar ul{
+        position: absolute;
+        display: block;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        height: 0;
+        text-align: center;
+        padding-left: 0;
+        background-color: var(--col-2);
+        transition: height 1s ease;
+        padding: 0;
+        z-index: 100;
+        margin: 0;
+    }
+
+    #navbar ul li{
+        display: block;
+        padding: 1.5rem 0;
+   }
+
+    #navbar ul li a{
+       text-decoration: none;
+       color: white;
+       font-weight: 500;
+   }
+
+   #navbar ul li a:hover{
+    color: var(--col-1);
+   }
+
+    #navbar ul.show{
+        height: 100vh;
+   }
+
+   #navbar-btn{
+       display: none;
+   }
+
+   #navbar-links li a:after{
+       display: none;
+   }
+}
+
+@media only screen and (max-width: 650px){
+    #middle-content{
+        height: 48rem;
+    }
+    #middle-content h1{
+        font-size: 2.2rem;
+    }
+    #middle-content p{
+        width: 80%;
+    }
+    #front-page-button{
+        display: flex;
+        justify-content: center;
+    }
+    #front-page-button a{
+        font-size: 0.8rem;
+        padding: 1rem;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-right: 0.4rem;
+        margin-bottom: 0.6rem;
+        transition: 0.7s;
+    }  
+}
+
+@media screen and (max-width: 365px) {
+    #middle-content h1{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #footer{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 5rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #discount-popup{
+        padding: 1.5rem;
+    }
+    #discount-popup h2{
+        font-size: 1.5rem;
+    }
+}

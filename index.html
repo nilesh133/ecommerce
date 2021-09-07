@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/906e7028b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Shop Plaza</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar" class="overall-padding">
+            <div id="name">
+                <h2>SHOP</h2>
+                <h4>PLAZA</h4>
+            </div>
+            <div id="menu-btn" class="menu">
+                <span>MENU</span>
+                <span>
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="discount-popup">
+        <i class="fas fa-times" id="cross-btn"></i>
+        <h2>GET 10% DISCOUNT ON YOUR FIRST ORDER</h2>
+    </div>
+
+    <div id="middle-content" class="overall-padding">
+        <span>NEW ARRIVALS</span>
+        <h1>DENIM JACKETS</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad accusamus doloremque amet sequi, aspernatur
+            alias.</p>
+        <div id="front-page-button">
+            <a href="#">EXPLORE</a>
+            <a href="#">ABOUT US</a>
+        </div>
+    </div>
+
+    <div id="card-container-text">
+        <h2>New Arrivals In Our Collection</h2>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card1 image"></div>
+            <h2>Shirt</h2>
+            <p>$50 <del>$70</del></p>
+            <div class="rating-buy">
+                <div class="rating">3.5<i class="fas fa-star"></i></div>
+                <div class="buy">Buy now</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card2 image"></div>
+            <h2>Jeans</h2>
+            <p>$50 <del>$70</del></p>
+            <div class="rating-buy">
+                <div class="rating">3.5<i class="fas fa-star"></i></div>
+                <div class="buy">Buy now</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card3 image"></div>
+            <h2>Shoes</h2>
+            <p>$50 <del>$70</del></p>
+            <div class="rating-buy">
+                <div class="rating">3.5<i class="fas fa-star"></i></div>
+                <div class="buy">Buy now</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card4 image"></div>
+            <h2>Watch</h2>
+            <p>$50 <del>$70</del></p>
+            <div class="rating-buy">
+                <div class="rating">3.5<i class="fas fa-star"></i></div>
+                <div class="buy">Buy now</div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer-about">
+            <h3>ABOUT</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut molestiae cupiditate ea repellat ipsam
+                perspiciatis.</p>
+        </div>
+        <div id="footer-links">
+            <h3>QUICK LINKS</h3>
+            <ul>
+                <li><a href="#" id="home-active">Home</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div id="footer-social">
+            <h3>SOCIAL</h3>
+            <a href="/home"><i class="fab fa-instagram"></i></a>
+            <a href="/home"><i class="fab fa-facebook"></i></a>
+            <a href="/home"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <script>
+        let menubtn = document.getElementById('menu-btn');
+        let list = document.querySelector('#navbar ul');
+        let popup = document.getElementById("discount-popup");
+        let crossbtn = document.getElementById("cross-btn");
+
+        menubtn.addEventListener('click', function () {
+            list.classList.toggle('show');
+        });
+
+        window.onload = function () {
+            setTimeout(function () {
+                popup.style.display = "block";
+            }, 10000);
+        }
+
+        crossbtn.addEventListener("click", () => {
+            popup.style.display = "none";
+        });
+
+    </script>
+</body>
+
+</html>
